@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swarup | Cloud Journey</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,Segoe UI,sans-serif;
+}
+
+body{
+background:#14110F;
+color:#F5E6CA;
+padding:20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.name h1{
+font-size:3.2rem;
+color:#D6AD60;
+}
+
+.subtitle{
+color:#bfa98b;
+font-size:1.2rem;
+}
+
+.buttons{
+display:flex;
+gap:12px;
+}
+
+.btn{
+background:#D6AD60;
+color:#14110F;
+padding:10px 20px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:24px;
+padding:22px;
+margin-bottom:18px;
+}
+
+.hero h2{
+margin-bottom:10px;
+color:#D6AD60;
+}
+
+.hero p{
+line-height:1.6;
+font-size:1rem;
+color:#ddd0bc;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:16px;
+}
+
+.card{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:20px;
+padding:16px;
+}
+
+.card h3{
+color:#D6AD60;
+margin-bottom:12px;
+font-size:1.2rem;
+}
+
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.tag{
+background:rgba(214,173,96,0.15);
+border:1px solid rgba(214,173,96,0.3);
+padding:5px 10px;
+border-radius:999px;
+font-size:0.85rem;
+}
+
+.project{
+padding-left:0;
+}
+
+.project li{
+list-style:none;
+margin-bottom:8px;
+font-size:0.95rem;
+color:#ddd0bc;
+}
+
+.project li::before{
+content:"✦ ";
+color:#D6AD60;
+}
+
+.arch{
+display:grid;
+gap:8px;
+}
+
+.arch div{
+background:rgba(255,255,255,0.03);
+padding:8px 12px;
+border-radius:10px;
+font-size:0.92rem;
+}
+
+.learning{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.learn-box{
+background:rgba(255,255,255,0.03);
+padding:10px;
+border-radius:10px;
+font-size:0.92rem;
+}
+
+.footer{
+text-align:center;
+margin-top:15px;
+color:#a99b85;
+font-size:0.9rem;
+}
+
+@media(max-width:900px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.header{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<div class="name">
+<h1>Swarup</h1>
+<p class="subtitle">Building my way into Cloud & DevOps ☁️</p>
+</div>
+
+<div class="buttons">
+<a href="#" class="btn">GitHub</a>
+<a href="#" class="btn">LinkedIn</a>
+</div>
+
+</div>
+
+<div class="hero">
+
+<h2>Hey 👋</h2>
+
+<p>
+I'm currently learning cloud engineering by building things instead of just watching tutorials. Recently I deployed my first AWS-hosted web server using VPC, EC2, Elastic IP, Security Groups, Apache and S3. Most days are spent breaking stuff, fixing it, and figuring out how cloud infrastructure actually works behind the scenes.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Tech Stack</h3>
+
+<div class="tags">
+
+<span class="tag">AWS</span>
+<span class="tag">EC2</span>
+<span class="tag">S3</span>
+<span class="tag">IAM</span>
+<span class="tag">VPC</span>
+<span class="tag">Subnets</span>
+<span class="tag">Route Tables</span>
+<span class="tag">Security Groups</span>
+<span class="tag">Elastic IP</span>
+<span class="tag">Linux</span>
+<span class="tag">SSH</span>
+<span class="tag">Apache</span>
+<span class="tag">Bash</span>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>AWS Web Server Deployment</h3>
+
+<ul class="project">
+
+<li>Custom VPC + Public Subnet</li>
+<li>Internet Gateway + Routing</li>
+<li>Amazon Linux EC2 Deployment</li>
+<li>Elastic IP Configuration</li>
+<li>Apache Web Hosting</li>
+<li>SSH Administration</li>
+<li>S3 Backup Storage</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Architecture</h3>
+
+<div class="arch">
+
+<div>🌐 Internet → Internet Gateway</div>
+<div>📡 Public Subnet → Route Table</div>
+<div>⚡ Elastic IP → EC2</div>
+<div>🖥️ Apache HTTP Server</div>
+<div>📦 S3 Backup Storage</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Currently Learning</h3>
+
+<div class="learning">
+
+<div class="learn-box">🐳 Docker</div>
+<div class="learn-box">⚙️ Jenkins</div>
+<div class="learn-box">🔄 CI/CD</div>
+<div class="learn-box">🏗️ Terraform</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+☁️ Built on AWS | Learning one deployment at a time
+
+</div>
+
+</div>
+
+</body>
+</html>
