@@ -52,9 +52,9 @@ Custom VPC → Public Subnet → Internet Gateway → Elastic IP → EC2 (Apache
 
 ![Elastic IP](screenshots/elastic-ip.png)
 
-### Architecture Diagram
+## Architecture Diagram
 
-![Architecture Diagram](Architecture Diagram/Architecture diagram.png)
+![Architecture](Architecture%20diagram.png)
 
 ## Skills Demonstrated
 
